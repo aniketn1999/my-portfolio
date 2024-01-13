@@ -36,6 +36,7 @@ const Skills = () => {
                                             duration={1}
                                             keyframes={["opacity : 1", "opacity : 0"]}
                                             iterationCount="1"
+                                            key={j}
                                         >
                                             <div className="progressbar-wrapper" key={j}>
                                                 <p>{skillItem.skillName}</p>

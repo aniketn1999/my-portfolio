@@ -37,9 +37,15 @@ const Home = () => {
         }}
       >
         <div className="home__contact-me">
-          < FaGithub size={40} className='btn' />
-          <FaLinkedin size={40} className='btn'/>
-          <FaInstagram size={40} className='btn'/>
+          < FaGithub size={40} className='btn' onClick={() => {
+            window.open('https://github.com/aniketn1999/', '_blanks')
+          }} />
+          <FaLinkedin size={40} className='btn' onClick={() => {
+            window.open('https://www.linkedin.com/in/aniket-nagrale/', '_blanks')
+          }} />
+          <FaInstagram size={40} className='btn' onClick={() => {
+            window.open('https://www.instagram.com/aniket.nagrale__/', '_blanks')
+          }} />
         </div>
       </Animate>
 

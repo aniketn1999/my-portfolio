@@ -14,32 +14,31 @@ const portfolioData = [
     id: 2,
     name: "Eyes Follow Mouse Cursor",
     image: ImageOne,
-    link: "",
+    link: "https://aniketn1999.github.io/Eyes-follow-mouse-cursor/",
   },
   {
     id: 3,
-    name: "Notes App",
-    link: "",
+    name: "Google Keep Clone",
+    link: "https://aniketn1999.github.io/GoogleKeepClone/",
     image: ImageTwo,
   },
   {
     id: 2,
-    name: "Supplier Design",
+    name: "Music Player App",
     image: ImageThree,
-    link: "",
+    link: "https://aniketn1999.github.io/MusicPlayerApp/",
   },
   {
     id: 2,
-    name: "Todo App",
+    name: "Typing Speed Test",
     image: ImageFour,
-
-    link: "",
+    link: "https://aniketn1999.github.io/typingTestSite/",
   },
   {
     id: 3,
-    name: "Shopping cart design",
+    name: "Spotify Clone",
     image: ImageFive,
-    link: "",
+    link: "https://aniketn1999.github.io/spotify-clone-/",
   },
 ];
 
@@ -54,7 +53,7 @@ const filterData = [
   },
   {
     filterId: 3,
-    label: "Design",
+    label: "Clones",
   },
 ];
 
@@ -79,7 +78,9 @@ const Portfolio = () => {
 
   console.log(filteredItems);
 
-  
+  // const openLink = () => {
+  //   window.open( , '_blank');
+  // }
   
 
   return (
@@ -117,7 +118,9 @@ const Portfolio = () => {
                 {index === hoveredValue && (
                   <div>
                     <p>{item.name}</p>
-                    <button >Visit</button>
+                    <button onClick={() => {
+                       window.open( item.link, '_blank')
+                    }}>Visit</button>
                   </div>
                 )}
               </div>

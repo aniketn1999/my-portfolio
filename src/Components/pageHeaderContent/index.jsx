@@ -1,7 +1,7 @@
 import './styles.scss';
 
 const PageHeaderContent = (props) => {
-  const { headerText, icon } = props;
+  const { headerText } = props;
 
   return (
     <div className="wrapper">

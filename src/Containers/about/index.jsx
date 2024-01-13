@@ -46,7 +46,7 @@ const About = () => {
                         duration={1.5}
                         delay={1}
                         start={{
-                            transform: "translateX(-900px)",
+                            transform: "translateX(-800px)",
                         }}
                         end={{
                             transform: "translatex(0px)",
@@ -62,7 +62,7 @@ const About = () => {
                         duration={1.5}
                         delay={1}
                         start={{
-                            transform: "translateX(500px)",
+                            transform: "translateX(800px)",
                         }}
                         end={{
                             transform: "translatex(0px)",
