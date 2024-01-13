@@ -8,23 +8,23 @@ import "./styles.scss"
 const data = [
     {
         label: "HOME",
-        to: "/"
+        to: "/my-portfolio/"
     },
     {
         label: "ABOUT ME",
-        to: "/about"
+        to: "/my-portfolio/about"
     },
     {
         label: "SKILLS",
-        to: "/skills"
+        to: "/my-portfolio/skills"
     },
     {
         label: "RESUME",
-        to: "/resume"
+        to: "/my-portfolio/resume"
     },
     {
         label: "PORTFOLIO",
-        to: "/portfolio"
+        to: "/my-portfolio/portfolio"
     }
     
 ]
@@ -42,7 +42,7 @@ const NavBar = () => {
             <nav className="navbar">
                 <div className="navbar__container">
 
-                    <Link to={"/"} className='navbar__container__logo'>
+                    <Link to={"/my-portfolio/"} className='navbar__container__logo'>
                         <FaReact size={30} />
                     </Link>
                 </div>
