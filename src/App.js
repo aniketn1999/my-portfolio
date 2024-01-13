@@ -40,7 +40,7 @@ const App = () => {
       {/* Main Page Content */}
       <div className="App__main-page-content">
         <Routes basename='to/tothepoint_login'>
-          <Route index path='/my-portfolio' element={<Home />} />
+          <Route index path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/resume' element={<Resume />} />
           {/* <Route path='/contact' element={<Contact />} /> */}
