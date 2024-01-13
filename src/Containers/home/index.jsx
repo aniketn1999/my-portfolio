@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom"
+// import { useNavigate } from "react-router-dom"
 import "./styles.scss"
 import { Animate } from "react-simple-animate"
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
@@ -8,11 +8,11 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Home = () => {
 
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
-  const handleNavigateToContactMePage = () => {
-    navigate("/contact")
-  }
+  // // const handleNavigateToContactMePage = () => {
+  // //   navigate("/contact")
+  // // }
 
   return (
 

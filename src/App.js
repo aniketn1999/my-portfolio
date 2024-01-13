@@ -39,7 +39,7 @@ const App = () => {
 
       {/* Main Page Content */}
       <div className="App__main-page-content">
-        <Routes>
+        <Routes basename='to/tothepoint_login'>
           <Route index path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/resume' element={<Resume />} />
