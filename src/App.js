@@ -10,7 +10,7 @@ import Portfolio from './Containers/portfolio'
 import Resume from './Containers/resume'
 import Skills from './Containers/skills'
 import NavBar from './Components/navBar'
-import particles from "./Utils/particles.js";
+// import particles from "./Utils/particles.js";
 
 const App = () => {
 
@@ -21,9 +21,9 @@ const App = () => {
   const location = useLocation();
   console.log(location);
 
-  const handleInit = async (main) => {
-    await loadFull(main)
-  }
+  // const handleInit = async (main) => {
+  //   await loadFull(main)
+  // }
   const renderParticleJsInHomePage = location.pathname === "/";
 
   return (
@@ -31,9 +31,9 @@ const App = () => {
     <div className="App">
       {/* particles js */}
 
-      {renderParticleJsInHomePage && (
+      {/* {renderParticleJsInHomePage && (
         <Particles id="particles" options={particles} init={handleInit} />
-      )}
+      )} */}
       {/*Navbar */}
       <NavBar />
 
