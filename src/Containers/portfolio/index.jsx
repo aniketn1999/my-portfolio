@@ -8,6 +8,7 @@ import ImageFour from "../../images/image4.jpg";
 import ImageFive from "../../images/image5.jpg";
 import "./styles.scss"
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const portfolioData = [
   {
@@ -110,9 +111,9 @@ const Portfolio = () => {
               onMouseLeave={() => handleHover(null)}
             >
               <div className="portfolio__content__cards__item__img-wrapper">
-                <a>
+                <NavLink>
                   <img alt="dummy data" src={item.image} />
-                </a>
+                </NavLink>
               </div>
               <div className="overlay">
                 {index === hoveredValue && (

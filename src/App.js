@@ -10,7 +10,7 @@ import Portfolio from './Containers/portfolio'
 import Resume from './Containers/resume'
 import Skills from './Containers/skills'
 import NavBar from './Components/navBar'
-// import particles from "./Utils/particles.js";
+import particles from "./Utils/particles.js";
 
 const App = () => {
 
@@ -21,26 +21,26 @@ const App = () => {
   const location = useLocation();
   console.log(location);
 
-  // const handleInit = async (main) => {
-  //   await loadFull(main)
-  // }
-  const renderParticleJsInHomePage = location.pathname === "/";
+  const handleInit = async (main) => {
+    await loadFull(main)
+  }
+  const renderParticleJsInHomePage = location.pathname === "/my-portfolio";
 
   return (
 
     <div className="App">
       {/* particles js */}
 
-      {/* {renderParticleJsInHomePage && (
+      {renderParticleJsInHomePage && (
         <Particles id="particles" options={particles} init={handleInit} />
-      )} */}
+      )}
       {/*Navbar */}
       <NavBar />
 
       {/* Main Page Content */}
       <div className="App__main-page-content">
         <Routes basename='to/tothepoint_login'>
-          <Route index path='/my-portfolio/' element={<Home />} />
+          <Route index path='/my-portfolio' element={<Home />} />
           <Route path='/my-portfolio/about' element={<About />} />
           <Route path='/my-portfolio/resume' element={<Resume />} />
           {/* <Route path='/contact' element={<Contact />} /> */}

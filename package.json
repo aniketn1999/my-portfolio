@@ -1,6 +1,6 @@
 {
   "name": "my-portfolio",
-  "homepage": "https://aniketn1999.github.io/my-portfolio/",
+  "homepage": "https://aniketn1999.github.io/my-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +18,7 @@
     "react-tsparticles": "^2.12.2",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.69.7",
-    "tsparticles": "^3.0.3",
+    "tsparticles": "^2.0.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
