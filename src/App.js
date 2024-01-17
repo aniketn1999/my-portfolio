@@ -24,7 +24,7 @@ const App = () => {
   const handleInit = async (main) => {
     await loadFull(main)
   }
-  const renderParticleJsInHomePage = location.pathname === "/my-portfolio";
+  const renderParticleJsInHomePage = location.pathname === "/my-portfolio/";
 
   return (
 
@@ -40,7 +40,7 @@ const App = () => {
       {/* Main Page Content */}
       <div className="App__main-page-content">
         <Routes basename='to/tothepoint_login'>
-          <Route index path='/my-portfolio' element={<Home />} />
+          <Route index path='/my-portfolio/' element={<Home />} />
           <Route path='/my-portfolio/about' element={<About />} />
           <Route path='/my-portfolio/resume' element={<Resume />} />
           {/* <Route path='/contact' element={<Contact />} /> */}
